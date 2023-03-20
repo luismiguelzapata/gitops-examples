@@ -29,7 +29,7 @@ spec:
             maxDuration: 3m0s
             factor: 2
       source:
-        repoURL: https://github.com/christianh814/gitops-examples
+        repoURL: https://github.com/luismiguelzapata/gitops-examples
         targetRevision: main
         path: applicationsets/list-generator/v0.1/overlays/{{cluster}}
       destination:

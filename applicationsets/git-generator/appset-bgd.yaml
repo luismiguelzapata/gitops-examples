@@ -6,7 +6,7 @@ metadata:
 spec:
   generators:
   - git:
-      repoURL: https://github.com/christianh814/gitops-examples
+      repoURL: https://github.com/luismiguelzapata/gitops-examples
       revision: main
       files:
       - path: "applicationsets/git-generator/cluster-config/**/config.json"
@@ -26,7 +26,7 @@ spec:
             maxDuration: 3m0s
             factor: 2
       source:
-        repoURL: https://github.com/christianh814/gitops-examples
+        repoURL: https://github.com/luismiguelzapata/gitops-examples
         targetRevision: main
         path: applicationsets/git-generator/overlays/{{cluster.overlay}}
       destination:

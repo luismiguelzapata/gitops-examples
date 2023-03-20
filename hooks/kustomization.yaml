@@ -5,7 +5,7 @@ resources:
 - dbbackup.yaml
 - logrotate.yaml
 - postsync-job.yaml
-- github.com/christianh814/gitops-examples/pricelist
+- github.com/luismiguelzapata/gitops-examples/pricelist
 - presync-sa.yaml
 - rb-for-sa.yaml
 - pricelist-wh-ss.yaml

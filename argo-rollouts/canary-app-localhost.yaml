@@ -2,12 +2,12 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: canary
-  namespace: argocd
+  namespace: default
 spec:
   project: default
   source:
     path: argo-rollouts/canary/overlays/localhost
-    repoURL: 'https://github.com/christianh814/gitops-examples'
+    repoURL: 'https://github.com/luismiguelzapata/gitops-examples'
     targetRevision: main
   destination:
     namespace: canary

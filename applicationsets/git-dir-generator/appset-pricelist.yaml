@@ -6,7 +6,7 @@ metadata:
 spec:
   generators:
   - git:
-      repoURL: https://github.com/christianh814/gitops-examples
+      repoURL: https://github.com/luismiguelzapata/gitops-examples
       revision: main
       directories:
       - path: applicationsets/git-dir-generator/apps/*
@@ -26,7 +26,7 @@ spec:
             maxDuration: 3m0s
             factor: 2
       source:
-        repoURL: https://github.com/christianh814/gitops-examples
+        repoURL: https://github.com/luismiguelzapata/gitops-examples
         targetRevision: main
         path: '{{path}}'
       destination:

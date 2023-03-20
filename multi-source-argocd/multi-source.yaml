@@ -2,12 +2,12 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: pricelist
-  namespace: argocd
+  namespace: default
 spec:
   project: default
   # Note it's "sources" vs "source"
   sources:
-    - repoURL: https://github.com/christianh814/gitops-examples
+    - repoURL: https://github.com/luismiguelzapata/gitops-examples
       path: applicationsets/rollingsync/apps/pricelist-config
       targetRevision: main
     - chart: mysql
@@ -28,7 +28,7 @@ spec:
             value: "pricelist"
           - name: secondary.replicaCount
             value: "2"
-    - repoURL: https://github.com/christianh814/gitops-examples
+    - repoURL: https://github.com/luismiguelzapata/gitops-examples
       path: applicationsets/rollingsync/apps/pricelist-frontend
       targetRevision: main
   destination:

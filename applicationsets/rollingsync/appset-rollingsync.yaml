@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: ApplicationSet
 metadata:
   name: pricelist
-  namespace: argocd
+  namespace: default
 spec:
   generators:
   - list:
@@ -53,7 +53,7 @@ spec:
             maxDuration: 3m0s
             factor: 2
       source:
-        repoURL: https://github.com/christianh814/gitops-examples
+        repoURL: https://github.com/luismiguelzapata/gitops-examples
         targetRevision: main
         path: '{{path}}'
       destination:

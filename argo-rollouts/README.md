@@ -13,7 +13,7 @@ If I change the image in the [kustomization.yaml file patch](bg/overlays/localho
 
 ```shell
 kubectl argo rollouts get rollout gobg -n bluegreen
-kubectl argo rollouts -n bluegreen set image  gobg gobg=christianh814/gobg:green
+kubectl argo rollouts -n bluegreen set image  gobg gobg=luismiguelzapata/gobg:green
 kubectl argo rollouts get rollout gobg -n bluegreen
 kubectl argo rollouts promote -n bluegreen gobg
 kubectl argo rollouts get rollout gobg -n bluegreen

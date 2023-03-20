@@ -3,4 +3,4 @@ kind: ServiceAccount
 metadata:
   annotations: {}
   name: cli-job-sa
-  namespace: argocd
+  namespace: default
